@@ -22,6 +22,7 @@ var albums = []album{
 
 func main() {
 	server := gin.Default()
+
 	server.GET("/hello", func(context *gin.Context) {
 		//fmt.Println(context)
 		context.JSON(http.StatusOK, gin.H{
